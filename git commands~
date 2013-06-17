@@ -18,7 +18,3 @@ git config --global user.email "adam.poland.89@gmail.com"
 git config --global user.name "dzojstik"
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
-
-
-
-git@github.com:dzojstik/dzojstik.github.io.git
