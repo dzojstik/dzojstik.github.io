@@ -1,0 +1,32 @@
+﻿
+body{
+	/*color: #F1F5F8;*/
+	background: #d9eabe/*url(../images/background.png) repeat-x*/;
+}
+
+#topColor
+{
+	background-color: #286a16;
+}
+
+
+*
+{
+	color:#4a6321;
+}
+
+#menuText a, a:visited
+{
+	color:#9bff80;
+}
+
+h2
+{	
+	color:#9bff80;
+}
+
+a:hover
+{
+	color:#8bff6b;
+}
+

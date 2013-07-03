@@ -1,0 +1,105 @@
+﻿/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+html, body {
+text-align: center;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+#menuText a
+{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+#menuText
+{
+	font-family: Palatino Linotype, Franklin Gothic Medium, Arial; /*line-height: 105px;*/;
+	font-size: 21px;
+	padding-right: 20px;
+	
+	
+}
+
+#menuText a:hover
+{
+	border-bottom: 1px dashed #ffffff;
+}
+
+#galleryInformation p
+{
+	padding:2px;
+	padding-left:12px;
+	text-align:justify;
+}
+
+a, a:visited
+{
+	text-decoration:none;
+}
+
+a:hover
+{
+	border-bottom:1px dashed #228FEA;
+}
+
+*
+{
+  margin: 0 auto 0 auto;
+ /* text-align:left; */}
+
+
+h1
+{
+	font-family:Palatino Linotype, Franklin Gothic Medium, Arial;
+	font-size:40px;
+	font-weight:bold;
+	
+	padding:0px;
+	padding-top:30px;
+	margin:0px;
+	
+	letter-spacing:1px;
+}
+
+h2
+{
+	font-family:Palatino Linotype, Franklin Gothic Medium, Arial;
+	font-size:26px;
+	font-weight:bold;
+	letter-spacing:-1px;
+	
+	padding:0px;
+	padding-left:20px;
+	margin-top:8px;
+}
+
+
+/* Overwritting some Galleria settings */
+    #main_image{margin:0px auto 10px auto;}
+    #main_image img{margin-bottom:2px; height:auto;width:600px;}
+
+	
+	.galleria_wrapper, .galleria_container
+	{
+	text-align:center;
+	}
+	
+	.caption
+	{
+	font-size:15px;
+	}
+	
+
+#footer
+{
+text-align:center;
+font-size:10px;
+
+}
+
