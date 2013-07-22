@@ -73,7 +73,7 @@ body {
     ALL: Orange Theme
    =================== */
 body{
-	background-color: #EEFFF7;/*background*/
+	background-color: #FFFCE3;/*background*/
 }
 
 .main-container{
@@ -82,18 +82,18 @@ body{
 
 /*borders*/
 .header-container {
-    border-bottom: 20px solid #4E8C69;
+    border-bottom: 20px solid #e44d26;;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #4E8C69;
+    border-top: 20px solid #e44d26;;
 }
 /*main  header & footer color*/
 .header-container,
 .footer-container,
 .main aside {
-    background: #3B5730;
+    background: #f16529;
 }
 
 .title {
@@ -119,7 +119,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #4E8C69;
+    background: #e44d26;
 }
 
 nav a:hover,
