@@ -1,147 +1,85 @@
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head>
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" >
-<link rel="stylesheet" type="text/css" media="all" href="css/text.css" >
-<link rel="stylesheet" type="text/css" media="all" href="css/960.css" >
-<link rel="stylesheet" type="text/css" media="all" href="style.css" >
-<link rel="stylesheet" type="text/css" media="all" href="colors.css" >
-<link href="css/galleria.css" rel="stylesheet" type="text/css" media="screen"> 
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>dżojstik</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-<script type="text/javascript" src="jquery-1.2.6.min.js"></script> 
-<!--<script type="text/javascript" src="jquery.galleria.js"></script> 
-<script type="text/javascript"> 
-jQuery(function($) { 
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-$('ul.gallery').galleria({
-			history   : true, // activates the history object for bookmarking, back-button etc.
-			clickNext : true, // helper for making the image clickable
-			insert    : '#main_image', // the containing selector for our main image
-			onImage   : function(image,caption,thumb) { // let's add some image effects for demonstration purposes
-				
-				// fade in the image & caption
-				if(! ($.browser.mozilla && navigator.appVersion.indexOf("Win")!=-1) ) { // FF/Win fades large images terribly slow
-					image.css('display','none').fadeIn(1000);
-				}
-				caption.css('display','none').fadeIn(600);
-				
-				// fetch the thumbnail container
-				var _li = thumb.parents('li');
-				
-				// fade out inactive thumbnail
-				_li.siblings().children('img.selected').fadeTo(500,0.3);
-				
-				// fade in active thumbnail
-				thumb.fadeTo('fast',1).addClass('selected');
-				
-				// add a title for the clickable image
-				image.attr('title','Next image >>');
-			},
-			onThumb : function(thumb) { // thumbnail effects goes here
-				
-				// fetch the thumbnail container
-				var _li = thumb.parents('li');
-				
-				// if thumbnail is active, fade all the way.
-				var _fadeTo = _li.is('.active') ? '1' : '0.3';
-				
-				// fade in the thumbnail when finnished loading
-				thumb.css({display:'none',opacity:_fadeTo}).fadeIn(1000);
-				
-				// hover effects
-				thumb.hover(
-					function() { thumb.fadeTo('fast',1); },
-					function() { _li.not('.active').children('img').fadeTo('fast',0.3); } // don't fade out if the parent is active
-				)
-			}
-		});
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title"><img src="img/logo.png" width="500px" height="110px"/></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">O nas</a></li>
+                        <li><a href="songs.html">Nasze piosenki</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
+        <div class="main-container">
+            <div class="main wrapper clearfix">
 
+                <article>
+                    <header>
+                        <h1>O nas</h1>
+                        <p>Adam i Krzysztof to aktualny skład zespołu.</p>
+                    </header>
+                    <!-- <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                    </footer> -->
+                </article>
 
+                <aside>
+                    <h3>Dżojstik w sieciach społecznościowych</h3>
+                    <p>Dostępne już wkrótce.</p>
+                </aside>
 
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
 
-}); 
-</script>
--->
-<style media="screen,projection" type="text/css">
-	
-	/* BEGIN DEMO STYLE */
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>kontakt: <a href="mailto:dzojstik.zespol@gmail.com ">dzojstik.zespol@gmail.com</a></h3>
+            </footer>
+        </div>
 
-	.gallery li{width:80px;height:60px;border:3px double #111;margin: 0 2px;background:#000; float:left;}
-	.gallery {width:300px;}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    </style>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-
-
-
-<title>dżojstik</title>
-</head>
-
-<body>
-
-
-	
-
-<div id="topColor">
-<p>&nbsp;</p>	
-	<img src="./images/logo.png" width="400px" height="100px">
-	<div class="clear">&nbsp;</div>
-	<div id="menuText">
-		<a href="./index.html">o zespole</a> |
-		<!--<a href="#">gallery</a> |-->
-		<a href="./songs.html">piosenki</a> |
-		<a href="./contact.html">kontakt</a>
-	</div>
-	<p>&nbsp;</p>
-</div>
-
-
-
-<!--
-<div class="container_12">
-	<div class="grid_4">    
-        <ul class="gallery"> 
-			<li class="active"><img src="./images/1.jpg" title="An HDR Field" alt="1"></li> 
-            <li><img src="./images/2.jpg" title="Nice Sky HDR" alt="2"></li> 
-            <li><img src="./images/3.jpg" title="Cool Colors" alt="3"></li> 
-            <li><img src="./images/4.jpg" title="A beautiful example of HDR on an Indoor scene" alt="4"></li> 
-            <li><img src="./images/5.jpg" title="Sweet lighthouse photo displaying nice contrast" alt="5"></li> 
-            <li><img src="./images/6.jpg" title="The Incredible HDR Bunny" alt="6"></li> 
-            <li><img src="./images/7.jpg" title="Basílica del Pilar, Zaragoza, Aragón" alt="7"></li> 
-            <li><img src="./images/8.jpg" title="Burg ehrenberg HDR photo" alt="8"></li> 
-            <li><img src="./images/9.jpg" title="Angers-Cathédrale" alt="9"></li> 
-            <li><img src="./images/10.jpg" title="Almost looks like a painting" alt="10"></li> 
-            <li><img src="./images/11.jpg" title="BMW Z8" alt="11"></li> 
-            <li><img src="./images/12.jpg" title="Awesome night HDR photo" alt="12"></li> 
-		</ul>
-        
-	</div>
-
-	<div class="grid_8">
-
-			<div id="main_image"></div>
-	</div>
-</div>
-
-    <div class="clear">&nbsp;</div>
-    -->
-<div class="container_16">
-	
-	<div class="grid_4">
-		<p>&nbsp;</p>
-	</div>
-
-     <div class="grid_8" id="galleryInformation">  
-       <h2>O zespole</h2>
-       <p>Aktualnie skład zespołu to Adam i Krzysztof.</p>
-	</div>
-    
-       <div class="grid_4">
-		<p>&nbsp;</p>
-	</div>
-    </div>
-
-</body>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
