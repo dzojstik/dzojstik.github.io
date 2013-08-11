@@ -1,0 +1,49 @@
+/*
+ * column width: 320, width 280 + padding 20px = 300, vertical space is 20px
+ */
+.item { 
+	width: 260px;
+	height: 173px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	color:white;
+}
+
+.iLicense
+{
+	background: #2980b9;
+}
+.iAbout
+{
+	background: #8e44ad;
+}
+.iContact
+{
+	background: #e67e22;
+}
+.iLinks
+{
+	background: #f39c12;
+}
+.iOffer
+{
+	background: #1abc9c;
+}
+.iSongs
+{
+	background: #2ecc71;
+}
+
+
+
+#container{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.masonryWrapper{
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
