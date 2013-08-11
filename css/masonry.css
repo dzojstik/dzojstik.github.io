@@ -6,8 +6,10 @@
 	height: 173px;
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-bottom: 20px;
 	margin-bottom: 20px;
 	color:white;
+	/*float:left;*//*if java script is disabled tiles will somehow arrange*/
 }
 
 .iLicense
@@ -40,10 +42,12 @@
 	background: #2c3e50;
 }
 
-.bigTileContent
+
+ .bigTileContent
 {
 	display:none;
 }
+
 
 #container{
 	margin-left: auto;
@@ -55,3 +59,9 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+
+
+
+

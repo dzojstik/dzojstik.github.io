@@ -86,8 +86,16 @@ body{
 h1{
 	font-family:freight-sans-pro, 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
-
-
+.simpleHtmlLink
+{
+	position: absolute;
+	top: 0;
+	font-size: 0.9em;
+}
+.simpleHtmlLink a
+{
+	color:#555555;
+}
 
 /* ==========================================================================
    Media Queries

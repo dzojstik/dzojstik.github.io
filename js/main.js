@@ -1,3 +1,7 @@
+//set height of tiles to 173px (if js is disabled it will autoextend to content)
+// $('.item').css('height', "173px");
+// $('.bigTileContent').css('display', 'none');
+
 //init masonry
 var container = document.querySelector('#container');
 var msnry = new Masonry(container, {
@@ -17,7 +21,7 @@ var tileExtendingNow = false;//if some tile is extending now
 var previousItem;//used to bring extending tile on top
 
 //click on tile event
-$('.item').click(function() {
+$('.item').click(function(event) {
 	if (tileExtendingNow != true)
 		$(this).stop();
 
@@ -43,25 +47,29 @@ $('.item').click(function() {
 		else
 		{
 			//we clicked our extended tile, shrink it
-			$(this).animate({
-				height : "173px",
-				width : "260px"
-			}, 90, 'linear', function() {
-				//show apropriate tile content
-				$(this).children('.smallTileContent').css('display', 'block');
-				$(this).children('.bigTileContent').css('display', 'none');
-
-				//remove this from array extended
-				var index = extended.indexOf(this);
-				extended.splice(index, 1);
-				tileExtendingNow = false;
-				//restart masonry
-				$('#container').masonry({
-					itemSelector : '.item',
-					columnWidth : 320,
-					isFitWidth : true
-				});
-			})
+			//shrink only if width > ~extended tile width, otherwise users wouldn't be able to navigate their mobile screens
+			if($(window).width()>640)
+			{
+				$(this).animate({
+					height : "173px",
+					width : "260px"
+				}, 90, 'linear', function() {
+					//show apropriate tile content
+					$(this).children('.smallTileContent').css('display', 'block');
+					$(this).children('.bigTileContent').css('display', 'none');
+	
+					//remove this from array extended
+					var index = extended.indexOf(this);
+					extended.splice(index, 1);
+					tileExtendingNow = false;
+					//restart masonry
+					$('#container').masonry({
+						itemSelector : '.item',
+						columnWidth : 320,
+						isFitWidth : true
+					});
+				})
+			}
 			return;
 		}
 	}
@@ -115,4 +123,4 @@ $('.item').mouseout(function() {
 			opacity : 1
 		}, 200);
 	}
-}); 
+});
