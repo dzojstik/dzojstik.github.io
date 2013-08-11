@@ -16,26 +16,34 @@
 }
 .iAbout
 {
-	background: #8e44ad;
+	background: #7f8c8d;
 }
 .iContact
 {
-	background: #e67e22;
+	background: #c0392b;
 }
 .iLinks
 {
-	background: #f39c12;
+	background: #e67e22;
 }
 .iOffer
 {
-	background: #1abc9c;
+	background: #16a085;
 }
 .iSongs
 {
-	background: #2ecc71;
+	background: #8e44ad;
 }
 
+.iGallery
+{
+	background: #2c3e50;
+}
 
+.bigTileContent
+{
+	display:none;
+}
 
 #container{
 	margin-left: auto;
