@@ -82,7 +82,7 @@ $('.item').click(function(event) {
 	
 	//start extending
 	$(this).animate({
-		height : "559px",
+		height : "600px",
 		width : "580px",
 		opacity : 1
 	}, 100, 'linear', function() {
